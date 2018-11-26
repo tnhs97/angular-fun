@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    width:80%;
+    margin: auto
+}
+
+.post-list{
+    display: flex;
+    flex-wrap: flex
+}
+div{
+    display: block
+}

@@ -1,0 +1,12 @@
+.post-detail {
+    max-width: 400px;
+    margin-right: 20px;
+    border: 2px solid black
+}
+
+.post-detail img {
+    max-width: 300px;
+}
+div{
+    display: block
+}
