@@ -19,11 +19,17 @@ export class PostService {
     return this.httpService.get<Post[]>(this.postUri);
   }
 
+  getPost(id: number):Observable<Post> {
+    return this.httpService.get<Post>(this.postUri +'/'+id);
+  }
   addNewPost(post: Post): Observable<Post>{
     return this.httpService.post<Post>(this.postUri, post, httpOptions);
   }
 
-  
+  updatePost(post: Post): Observable<Post>{
+    return this.httpService.put<Post>(this.postUri +'/'+post.id, post, httpOptions);
+  }
+
   deletePost (post: Post | number): Observable<Post> {
     const id = typeof post === 'number' ? post : post.id;
     const url = `${this.postUri}/${id}`;

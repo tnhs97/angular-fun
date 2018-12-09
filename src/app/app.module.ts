@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostAddComponent } from './post-add/post-add.component';
+import { PostEditComponent } from './post-edit/post-edit.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { PostAddComponent } from './post-add/post-add.component';
     PostDetailComponent,
     PostListComponent,
     PostAddComponent,
+    PostEditComponent,
   ],
   imports: [
     BrowserModule,

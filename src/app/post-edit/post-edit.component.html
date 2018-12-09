@@ -1,0 +1,12 @@
+<h2>Update Post</h2>
+<form>
+  Image: <input type="text" name="image" [(ngModel)]="post.image" /> 
+  Title:
+  <input type="text" name="title" id="" [(ngModel)]="post.title" /> 
+  Content:
+  <input type="text" name="content" id="" [(ngModel)]="post.content" />
+  <div>
+    <button type="submit" (click)="updatePost()">Submit</button>
+    <button (click)="goBack()">Go back</button>
+  </div>
+</form>

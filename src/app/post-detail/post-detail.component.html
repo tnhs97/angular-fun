@@ -3,6 +3,6 @@
     <h2>{{post.title}}</h2>
     <p>{{post.content}}</p>
     <button class="delete" title="delete hero"
-    (click)="delete(hero)">x</button>
-
+    (click)="delete(post)">x</button>
+    <button routerLink="/post-edit/{{post.id}}">Edit</button>
 </div>
